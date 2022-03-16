@@ -4,6 +4,7 @@
 
 - generate QR Code from text
 - And Save it
+- show generated qr
 
 ## comming soon
 
