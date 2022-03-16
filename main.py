@@ -1,5 +1,5 @@
 import qrcode
-userInput = input()
+userInput = input("qr data:")
 qr = qrcode.QRCode(
     version=1,
     error_correction=qrcode.constants.ERROR_CORRECT_H,
@@ -9,5 +9,5 @@ qr = qrcode.QRCode(
 qr.add_data(userInput)
 qr.make(fit=True)
 img = qr.make_image(fill_color="#FFFFFF", back_color="yellow")
-type(img)
+print(type(img))
 img.save('./qr.png')
